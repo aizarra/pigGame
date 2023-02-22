@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+.dice {
+  display: block;
+  margin: 0 auto;
+}
+
+.player {
+  display: flex;
+  flex-direction: column;
+  background-color: #f7f7f7;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.player.active {
+  background-color: #eee
+  border-color: #8bc34a;
+  border: 5px solid #f44336
+}
+
+.player__name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.player__score {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.player__current-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.player__current-label {
+  font-size: 1rem;
+  color: #888;
+}
+
+.player__current-score {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f44336;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #8bc34a;
+  color: #fff;
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.btn--new {
+  background-color: #2196f3
