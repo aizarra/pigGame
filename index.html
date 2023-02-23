@@ -7,32 +7,47 @@
     <link rel="stylesheet" href="app.css">
   </head>
   <body>
-        <div class="container">
-  <img src="dice-1.png" alt="Dice" class="dice">
-</div>
-
     <div class="container">
-      <div class="player player--0 active">
-        <div class="player__name" id="name--0">Player 1</div>
-        <div class="player__score" id="score--0">0</div>
-        <div class="player__current-box">
-          <div class="player__current-label">Current</div>
-          <div class="player__current-score" id="current--0">0</div>
-        </div>
-      </div>
-      <div class="player player--1">
-        <div class="player__name" id="name--1">Player 2</div>
-        <div class="player__score" id="score--1">0</div>
-        <div class="player__current-box">
-          <div class="player__current-label">Current</div>
-          <div class="player__current-score" id="current--1">0</div>
-        </div>
-      </div>
-      <button class="btn btn--new">New Game</button>
-      <button class="btn btn--roll">Roll Dice</button>
-      <button class="btn btn--hold">Hold</button>
-    </div>
+      <div class="game">
+        <img src="dice-1.png" alt="Dice" class="dice">
 
+        <div class="players">
+          <div class="player player--0 active">
+            <div class="player__name" id="name--0">Jugador 1</div>
+            <div class="player__score" id="score--0">0</div>
+            <div class="player__current-box">
+              <div class="player__current-label">En curso</div>
+              <div class="player__current-score" id="current--0">0</div>
+            </div>
+          </div>
+          <div class="player player--1">
+            <div class="player__name" id="name--1">Jugador 2</div>
+            <div class="player__score" id="score--1">0</div>
+            <div class="player__current-box">
+              <div class="player__current-label">En curso</div>
+              <div class="player__current-score" id="current--1">0</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button class="btn btn--new">Nuevo Juego</button>
+          <button class="btn btn--roll">Lanza el Dado</button>
+          <button class="btn btn--hold">Aguanta!</button>
+        </div>
+      </div>
+
+      <div class="instructions">
+        <h2>Instrucciones del juego</h2>
+        <ol>
+          <li>El primer jugador tira los dos dados.</li>
+          <li>Si el jugador saca un "1" en cualquiera de los dados, pierde todos los puntos acumulados en la ronda y su turno termina.</li>
+          <li>Si el jugador no saca un "1", puede elegir entre "lanzar de nuevo" o "terminar la ronda".</li>
+          <li>El juego continúa con cada jugador en su turno, siguiendo los pasos 1 y 2.</li>
+          <li>El primer jugador en alcanzar una puntuación total de 100 puntos o más gana el juego.</li>
+        </ol>
+      </div>
+    </div>
 
     <script src="app.js"></script>
   </body>
